@@ -1,0 +1,4 @@
+@mixin flex-center($value-1,$value-2) {
+    display:$value-1;
+    align-items: $value-2;
+}
