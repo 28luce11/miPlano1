@@ -8,6 +8,7 @@ import { FeatureRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { CarritoComponent } from './pages/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
