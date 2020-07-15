@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
+import { PlanosComponent } from './pages/planos/planos.component';
+import { CardHomeComponent } from './components/card-home/card-home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CarritoComponent } from './pages/carrito/carrito.component';
     NavbarComponent,
     FooterComponent,
     CheckoutComponent,
-    CarritoComponent
+    CarritoComponent,
+    PlanosComponent,
+    CardHomeComponent
   ],
   imports: [
     BrowserModule,
