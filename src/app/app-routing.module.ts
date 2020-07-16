@@ -10,9 +10,9 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
-    // { path: '**', component: HomeComponent },
     { path: 'carrito', component: CarritoComponent},
-    { path: 'checkout', component: CheckoutComponent}
+    { path: 'checkout', component: CheckoutComponent},
+    { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

@@ -1,36 +1,66 @@
-<main>
-    <h1><strong>Carrito de compra</strong></h1>
-    <div class="car">
+<main class="main-car">
+    <h1 class="main-car__title">Carrito de compra</h1>
+    <div class="main-car__specs">
         <div class="car__container--upper">
             <p>Producto</p>
             <p>Precio</p>
             <p>Cantidad</p>
             <p>Total</p>
-            <div>
-                <img src="./../../../assets/images/activo-4.png" alt="">
+            <p></p>
+            <div class="car__container--upper__specs item">
+                <img class="product__image" src="./../../../assets/images/activo-4.png" alt="">
                 <div>
                     <p>Casa Monaco</p>
                     <p>Plano</p>
                     <p>Archivo: PDF</p>
                 </div>
-                <p>$1.200.000</p>
-                <p>1</p>
-                <p>1.200.000</p>
+            </div>
+            <p class="item">$1.200.000</p>
+            <p class="item">1</p>
+            <p class="item">1.200.000</p>
+            <p class="item">x</p>
+            <div class="car__container--upper__specs item">
+                <img class="product__image" src="./../../../assets/images/activo-4.png" alt="">               
                 <div>
                     <p>Casa Estandar</p>
                     <p>Plano</p>
                     <p>Archivo: PDF</p>
                 </div>
-                <p>$1.200.000</p>
-                <p>1</p>
-                <p>1.200.000</p>
+            </div>
+            <p class="item">$1.200.000</p>
+            <p class="item">1</p>
+            <p class="item">1.200.000</p>
+            <p class="item">x</p>
+        </div> 
+        <div class="car__container--middle">
+            <div class="car__container--middle__left">
+                <input type="text" placeholder="  Código de cupón">
+                <button>Aplicar</button>
+            </div>
+            <div class="car__container--middle__right">
+                <button class="car__container--middle__right__left">Actualizar</button>
+                <button class="car__container--middle__right__right">Pagar</button>
             </div>
         </div>
-        <div class="car__container--middle">
-            
-        </div>
         <div class="car__container--lower">
-
+            <div>
+                <input type="text" class="mail__car__in" placeholder="  Correo Eléctronico">
+                <p class="mail__car__p">Ingrese el correo electrónico al cual desea que se envie el producto</p>
+            </div>
+            <div class="total">
+                <h2>TOTAL COMPRAS</h2>
+                <div class="total__bill">
+                    <p class="border">Subtotal</p>
+                    <p class="border">$2.300.000</p>
+                    <p class="border">Envió</p>
+                    <p class="border">Gratuito (e-mail)</p>
+                    <p>Total</p>
+                    <p>$2.300.000</p>
+                </div>
+                <figure>
+                    <img src="./../../../assets/images/pago-1.png" alt="">
+                </figure>
+            </div>
         </div>
     </div>
 </main>
