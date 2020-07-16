@@ -1,0 +1,124 @@
+@import './../../../assets/styles/abstract/variables.scss';
+@import './../../../assets/styles/abstract/mixin.scss';
+
+.main-car {
+	width: 1220px;
+	margin: 0 auto;
+	// text-align: center;
+	&__title {
+		text-align: center;
+		height: 100px;
+		font-size: 35px;
+		@include flex-center($value1, $value2, $value2)
+	}
+	&__specs {
+		
+	}
+}
+.car__container--upper {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 150px, 650px, 650px;
+	justify-items: center;
+	align-items: center;
+	row-gap: 50px;
+	margin-bottom: 50px;
+	// border-bottom: 1px solid grey;
+	&__specs {
+		@include flex-center($value1, $value2, start);
+		div {
+			p {
+				@include flex-center($value1, $value2, start);
+				margin-left: 10px;
+			}
+		}
+	}
+	p {
+		@include flex-center($value1, $value2, $value2);
+	}
+	
+}
+.car__container--middle {
+	border-top: 1px solid grey;
+	margin-bottom: 35px;
+	@include flex-center($value1, $value2, $value5);
+	&__left {
+		margin-left: 10px;
+		button {
+			height: 51px;
+			width: 171px;
+			color: $white;
+			background-color: $orange;
+			border: none;
+		}
+		input {
+			height: 51px;
+			width: 278px;
+			border: solid 1px #e4e4e4;
+  			background-color: #f5f5f5;
+		}
+	}
+	&__right {
+		&__left {
+			margin: 30px;
+			height: 51px;
+			width: 171px;
+			color: $white;
+			background-color: $brown;
+			border: none;
+		}
+		&__right {
+			height: 51px;
+			width: 171px;
+			color: $white;
+			background-color: $orange;
+			border: none;
+		}
+	}
+}
+.product__image {
+	width: 104px;
+	height: 121px;
+
+}
+.item {
+	border-top: 0.1px solid gray;
+	height: 150%;
+	width: 100%;
+}
+.mail__car__in{
+	margin: 0px 0px 0px 10px;
+	width: 550px;
+	height: 51px;
+	border: none;
+	background-color: #f5f5f5;
+}
+.mail__car__p {
+	margin: 0px 0 51px 10px;
+	width: 600px;
+
+}
+.car__container--lower {
+	@include flex-center($value1, $value4, $value5)
+}
+
+.total {
+	margin-bottom: 100px;
+	&__bill {
+		width: 450px;
+		line-height: 50px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+	&__bill :nth-child(2n) {
+		text-align: right;
+	}
+	figure {
+		text-align: right;
+		margin-right: -5px;
+	}
+ }
+ .border {
+	 border-bottom: 1px solid grey;
+ }
