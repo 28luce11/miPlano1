@@ -11,6 +11,7 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { CarritoComponent } from './pages/carrito/carrito.component';
 import { PlanosComponent } from './pages/planos/planos.component';
 import { CardHomeComponent } from './components/card-home/card-home.component';
+import { CardHomeCityComponent } from './components/card-home-city/card-home-city.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardHomeComponent } from './components/card-home/card-home.component';
     CheckoutComponent,
     CarritoComponent,
     PlanosComponent,
-    CardHomeComponent
+    CardHomeComponent,
+    CardHomeCityComponent
   ],
   imports: [
     BrowserModule,

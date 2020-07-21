@@ -1,9 +1,221 @@
 @import 'abstract/variables';
 
-.container {
-    background-color:$orange;
-}
 
-.l {
-    font-family: $font-navbar;
+.home {
+    
+    width: 100%;
+    
+
+    .container1 {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        position: relative;
+        
+
+        .background-container {
+            background-repeat:no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .texture {
+            width: 40%;
+            background-image:url(/assets/images/home/bannerBack.png);
+        }
+
+        .image {
+            width: 60%;
+            background-image:url(/assets/images/home/bannerHome.png);
+            }
+
+        .text-title {
+            position: absolute;
+            font-size: 80px;
+            top: 50%;
+            left: 45%;
+            transform: translate(-80%, -50%);
+            color: $color-font;
+            font-weight: bold;
+
+            .caracter-title {
+                color: white;
+            }
+        }
+    }
+
+    .container2 {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        padding-top: 50px;
+        position: relative;
+
+        .background-container {
+            background-repeat:no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .image-2 {
+            width: 40%;
+
+            .image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .alone {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+
+            .text-title-2 {
+                
+                position: absolute;
+                font-size: 50px;
+                color: $color-font;
+                font-weight: bold;
+            }
+
+            .squares {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: column;
+
+                .top-squares,
+                .down-squares {
+                    display: flex;
+                    width: 49%;
+                    height: 40%;
+                    
+                }
+
+                .square {
+                    background:#fcfcfc;
+                    width: 50%;
+                    color: $color-font;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    &.orange {
+                        background: $orange;
+                        color: white;
+                    }
+
+                    &.brown {
+                        background: $brown;
+                        color: white;
+                    }
+
+                    &.text {
+                        font-size: 50px;
+                        text-align: center;
+                        
+                    }
+
+                    .title-square {
+                        font-weight: bold;
+                    }
+                    .text-square {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .container3 {
+        
+        width: 100%;
+        background-image: url(/assets/images/home/ultimosHome.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+
+        .box-title {
+            width: 85%;
+            .title {
+                font-size: 50px;
+                padding: 40px;
+                color: $brown;
+                font-weight: bold;
+            }
+        }
+
+        .card-home {
+            width: 80%;
+            border: 2px solid  rgb(240, 236, 236);
+        }
+
+        .button-1 {
+            padding: 20px;
+            font-size: 30px;
+            width: 83%;
+
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:white;
+                height: 40px;
+                width: 70px;
+                .fa-plus:before {
+                    content: "\f067";
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .container4 {
+        height: 80vh;
+        width: 100%;
+        background-image: url(/assets/images/home/5408.png);
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .image {
+            height: 80%;
+        }
+
+        .text {
+            
+            color: white;
+            width: 35%;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                font-size: 50px;
+                font-weight: bold;
+            }
+
+            .pa {
+                font-size: 20px;
+                padding-bottom: 20px;
+                padding-top: 30px;
+                text-align: justify;
+            }
+
+            .circle {
+                font-size: 16px;
+                padding-bottom: 10px;
+                
+
+                .fas::before {
+                    color: $orange;
+                    padding-right: 10px;
+                } 
+            }
+        }
+    }
 }

@@ -1,0 +1,35 @@
+@import 'abstract/variables';
+
+
+.home-card {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    color: $color-font;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%; 
+        padding: 50px;
+
+
+        .text-title {
+            .title {
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            .arrow {
+                font-size: 40px;
+            }
+        }
+        
+    }
+
+    .image {
+        height: 280px;
+        width: 40%;
+        }
+}
